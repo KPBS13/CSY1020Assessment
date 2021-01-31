@@ -1,0 +1,43 @@
+html {
+  background-color: #222629;
+  font-family: Verdana;
+}
+
+body {
+display: grid;
+grid-template-columns: 25% 75%;
+grid-template-rows: auto;
+grid-template-areas: "header header"
+                      "nav main "
+                      "footer footer";
+}
+
+main {
+
+  color: #A6607C;
+  text-align: center;
+  display: inline;
+  grid-area: main;
+
+}
+nav {
+  grid-area: nav;
+  color: #A6607C;
+  display: block;
+  font-size: 20px;
+  margin: 3em;
+}
+
+header {
+  padding: 45px;
+  text-align: center;
+  color: #33266F;
+  font-size: 30px;
+  background-image: url(https://images.unsplash.com/photo-1518378379207-3418372afea3?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc4fGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  grid-area: header;
+}
+footer {
+  color: #542F34;
+  background-color: #A6607C;
+  grid-area: footer;
+}
