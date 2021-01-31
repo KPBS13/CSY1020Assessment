@@ -1,0 +1,66 @@
+html {
+  background-color: #222629
+}
+body {
+display: grid;
+grid-template-columns: 93% 7%;
+grid-template-rows: auto;
+grid-template-areas: "header nav"
+                      "main nav"
+                      "footer footer";
+}
+
+main {
+
+  color: #A6607C;
+  text-align: center;
+}
+  .shownav {
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+}
+.shownav:before{
+  content: '';
+   position: absolute;
+   width: 1.25em;
+   top: 0.4em;
+   left: 0px;
+   border-top: 0.2em solid #fff;
+  }
+  #clicked .on  {position: fixed;;}
+  #clicked .off {display: none;}
+
+  #clicked:target .on {display : none;}
+  #clicked:target .off {display: block;}
+
+nav {
+  padding-right: 3em;
+  background-color: #806543;
+  color: #A6607C;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  position: static;
+  text-align: center;
+  grid-area: nav;
+}
+
+
+header {
+  padding: 20px;
+  text-align: center;
+  color: #33266F;
+  font-size: 15px;
+  background-image: url(https://images.unsplash.com/photo-1518378379207-3418372afea3?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDc4fGFldTZyTC1qNmV3fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  grid-area: header;
+}
+footer {
+  color: #542F34;
+  grid-area: footer;
+  background-color: #A6607C;
+}
